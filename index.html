@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <link rel="stylesheet" href="../css/driver.css">
+  <script type="module" crossorigin src="/assets/index-DnADq2Cn.js"></script>
+</head>
+<body id="mainBody">
+    <div>
+        <canvas id="canvas" tabindex="0"></canvas>
+    </div>
+    <div>
+        <label>Persistence</label>
+        <input type="range" min="0" max="100" id="Persistence">
+    </div>
+    <div>
+        <label>Lacunarity</label>
+        <input type="range" min="0" max="100" id="Lacunarity">
+    </div>
+    <div>
+        <label>Noise Scale</label>
+        <input type="range" min="0" max="100" id="NoiseScale">
+    </div>
+    <div>
+        <label>Mesh Scale</label>
+        <input type="range" min="0" max="100" id="MeshScale">
+    </div>
+    <div>
+        <label>Terrain Height</label>
+        <input type="range" min="0" max="100" id="TerrainHeight">
+    </div>
+
+    <script src="./lib/noisejs-master/perlin.js"></script>
+    <script src="./src/terrain_generator.js"></script>
+    <script src="./src/input.js"></script>
+    <script src="./src/utility.js"></script>
+</body>
+</html>

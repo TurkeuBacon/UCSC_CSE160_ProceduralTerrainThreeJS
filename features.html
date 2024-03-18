@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5: Procedural Terrain</title>
+    <link rel="stylesheet" href="./css/features.css">
+</head>
+<body>
+    <div class="features_header">
+        <b>Name:</b> Gabriel Bacon
+        <br>
+        <b>Student ID:</b> 1991497
+        <br>
+        <b>Program:</b> 5
+        <br>
+        <b>Date:</b> 03/15/2023
+    </div>
+
+    <hr>
+
+    <h1>Features</h1>
+    <div class="features_body">
+        <label>This Project uses ThreeJS and a Perlin Noise Library to create procedural terrain. A noise generator class uses the perlin noise functions supplied by the library to generate a detailed noise maps. This noise map is made of several layers of perlin noise with each layer having its frequency and amplitude lowered. The generated noise map is then passed off to a TerrainGenerator class, that converts the array of height values supplied by the noise into a mesh. This process is then run for the chunks in range of the user camera, which allows the user to fly around an infinately generating world.
+        </label>
+        <br>
+        <br>
+        <label>
+            This project forced me to understand and become more comfortable with camera view coordinates. Much of my time was spent of correctly rotating the camera in response to user input, which was surprisingly involved, even using a library like ThreeJS. Because of this, I had to scale my project back a bit, as I originally wanted to use a 3D noise map passed through the Marching Cubes Algorithm. I also had to practice procedural mesh generation to create the terrain from a noise map.
+        </label>
+    </div>
+
+    <div>
+        <img src="thumbnail.jpg" width="600">
+    </div>
+
+    <hr>
+    <div id="driver">
+        <a href="./index.html">Driver</a>
+    </div>
+    <h2>JavaScript</h2>
+    <div>
+        <a href="./src/main.js">main.js</a>
+    </div>
+    <h2>Resources</h2>
+    <div>
+        <a href="https://github.com/josephg/noisejs">Noise Library</a>
+    </div>
+</body>
+</html>
